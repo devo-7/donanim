@@ -1,0 +1,39 @@
+#include<iostream>
+int main(){
+	int quantum=2;
+	int pid[]={1,2,3};
+	int bt[]={10,5,8};
+	int kalan[3];
+	int wt[3]={0};
+	int tat[3];
+	for(int i=0;i<n;i++)
+		kalan[i]=bt[i];
+	int zaman=0;
+	while(1){
+		int tamamlandi=1;
+		for(int i=0;i<n;i++){
+			if(kalan[i]>0){
+				tamamlandi=0;
+				if(kalan[i]>quantum){
+					zaman+=quantum;
+					kalan[i]-=quantum;
+				} else{
+					zaman+=kalan[i];
+					wt[i]=zaman-bt[i];
+					kalan[i]=0;
+				}
+			}
+		}
+		if(tamamlandi)
+			break;
+	for(int i=0;,<n;i++)
+		tat[i]=bt[i]+wt[i];
+	printf("PID\tBT\tWT\tTAT\n");
+	
+	for(int i=0;i<n;i++){
+		printf("P%d\t%d\t%d\t%d\n",pid[i],br[i],wt[i],tat[i]);
+	return 0;	
+	}
+	}
+	
+}
