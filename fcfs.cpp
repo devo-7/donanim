@@ -2,8 +2,8 @@
 int main(){
 	int n=4;
 	int pid[]={1,2,3,4};
-	int at[]={0,1,2,3};
-	int bt[]={5,3,8,6};
+	int at[]={0,1,2,3};//varýþ zamaný
+	int bt[]={5,3,8,6};//çalýþma süresi
 	
 	int wt[4], tat[4], ct[4];
 	int zaman = 0;
@@ -23,3 +23,9 @@ for (int i = 0; i < n; i++)
 		pid[i], at[i], bt[i], wt[i], ct[i], tat[i]);
 return 0;
 }
+/*fcfs first come first out
+1.if (zaman küçük ise vz)
+2.bekleme süresi=zaman-varýþ zamaný
+3.zaman=zaman+çalýþma süresi
+4.tamamlanma süresi=zaman
+5.geri dönüþ süresi=tamamlanma süresi-varýþ zamaný*/
